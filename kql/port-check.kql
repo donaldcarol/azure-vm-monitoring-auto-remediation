@@ -1,0 +1,6 @@
+VMBoundPort
+| where TimeGenerated > ago(10m)
+| where LocalPort in (22, 80, 443, 3389)
+| summarize LastSeen=max(TimeGenerated) by Computer, LocalPort
+| extend MinutesSinceSeen = datetime_diff('minute', now(), LastSeen) * -1
+| where MinutesSinceSeen > 5

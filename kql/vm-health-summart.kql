@@ -1,0 +1,3 @@
+Heartbeat
+| summarize LastHeartbeat=max(TimeGenerated) by Computer
+| extend Status = iff(LastHeartbeat < ago(5m), "Unhealthy", "Healthy")

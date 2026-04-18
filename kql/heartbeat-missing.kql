@@ -1,0 +1,4 @@
+Heartbeat
+| summarize LastHeartbeat=max(TimeGenerated) by Computer
+| extend MinutesSinceLast = datetime_diff('minute', now(), LastHeartbeat) * -1
+| where MinutesSinceLast > 5
