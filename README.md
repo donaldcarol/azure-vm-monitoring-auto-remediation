@@ -1,4 +1,4 @@
-\# Azure VM Monitoring \& Auto-Remediation Lab
+# Azure VM Monitoring & Auto-Remediation Lab
 
 
 
@@ -6,47 +6,47 @@ This project demonstrates a complete observability and auto-remediation setup fo
 
 
 
-\## 🚀 What this project covers
+## 🚀 What this project covers
 
 
 
-\- Azure Monitor Agent (AMA)
+- Azure Monitor Agent (AMA)
 
-\- Log Analytics Workspace
+- Log Analytics Workspace
 
-\- VM Insights
+- VM Insights
 
-\- Metric Alerts (CPU, Network)
+- Metric Alerts (CPU, Network)
 
-\- Log Alerts (Heartbeat, Port availability)
+- Log Alerts (Heartbeat, Port availability)
 
-\- Resource Health Alerts
+- Resource Health Alerts
 
-\- Action Groups
+- Action Groups
 
-\- Azure Automation Runbooks (auto-restart)
+- Azure Automation Runbooks (auto-restart)
 
-\- Azure Workbooks (dashboard \& incident view)
-
-
-
-\## 🧠 Scenarios implemented
+- Azure Workbooks (dashboard & incident view)
 
 
 
-\- High CPU usage alert
-
-\- VM not responding (missing heartbeat)
-
-\- Critical port not listening (RDP/SSH/HTTP)
-
-\- Resource health degradation
-
-\- Automatic VM restart when connectivity is lost
+## 🧠 Scenarios implemented
 
 
 
-\## 🏗️ Architecture
+- High CPU usage alert
+
+- VM not responding (missing heartbeat)
+
+- Critical port not listening (RDP/SSH/HTTP)
+
+- Resource health degradation
+
+- Automatic VM restart when connectivity is lost
+
+
+
+## 🏗️ Architecture
 
 
 
@@ -54,41 +54,41 @@ Azure VM → Azure Monitor Agent → Log Analytics
 
 → Alerts → Action Group → Automation Runbook → Restart VM  
 
-→ Workbook shows status \& history
+→ Workbook shows status & history
 
 
 
-\## 📊 Key features
+## 📊 Key features
 
 
 
-\- Centralized monitoring for multiple VMs
+- Centralized monitoring for multiple VMs
 
-\- Automated recovery (self-healing)
+- Automated recovery (self-healing)
 
-\- KQL-based analytics
+- KQL-based analytics
 
-\- Interactive dashboards (Workbooks)
-
-
-
-\## ⚙️ Technologies
+- Interactive dashboards (Workbooks)
 
 
 
-\- Azure Monitor
-
-\- Log Analytics
-
-\- Azure Automation
-
-\- KQL (Kusto Query Language)
-
-\- Terraform (optional)
+## ⚙️ Technologies
 
 
 
-\## 📌 Use case
+- Azure Monitor
+
+- Log Analytics
+
+- Azure Automation
+
+- KQL (Kusto Query Language)
+
+- Terraform (optional)
+
+
+
+## 📌 Use case
 
 
 
@@ -98,11 +98,11 @@ monitoring infrastructure, detecting failures, and automatically remediating iss
 
 
 
-\---
+---
 
 
 
-\## 📷 Screenshots
+## 📷 Screenshots
 
 
 
@@ -110,63 +110,63 @@ monitoring infrastructure, detecting failures, and automatically remediating iss
 
 
 
-\---
+---
 
 
 
-\## 🔧 Deployment
+## 🔧 Deployment
 
 
 
-1\. Create Log Analytics Workspace
+1. Create Log Analytics Workspace
 
-2\. Deploy 2–3 VMs
+2. Deploy 2–3 VMs
 
-3\. Install Azure Monitor Agent
+3. Install Azure Monitor Agent
 
-4\. Enable VM Insights
+4. Enable VM Insights
 
-5\. Configure alerts
+5. Configure alerts
 
-6\. Create action groups
+6. Create action groups
 
-7\. Deploy automation runbook
+7. Deploy automation runbook
 
-8\. Import workbook
-
-
-
-\---
+8. Import workbook
 
 
 
-\## 🔐 Security
+---
 
 
 
-\- Managed Identity used for Automation
-
-\- Least privilege RBAC applied
-
-\- No hardcoded credentials
+## 🔐 Security
 
 
 
-\---
+- Managed Identity used for Automation
+
+- Least privilege RBAC applied
+
+- No hardcoded credentials
 
 
 
-\## 💡 Future improvements
+---
 
 
 
-\- Integration with Azure Functions
+## 💡 Future improvements
 
-\- ITSM integration (ServiceNow)
 
-\- Auto-scale instead of restart
 
-\- Application Insights integration
+- Integration with Azure Functions
+
+- ITSM integration (ServiceNow)
+
+- Auto-scale instead of restart
+
+- Application Insights integration
 
 
 
