@@ -1,14 +1,16 @@
 terraform {
+  required_version = ">= 1.6.0"
 
   required_providers {
     azurerm = {
       source  = "hashicorp/azurerm"
-      version = "~>4.63"
+      version = "~> 4.68"
     }
   }
-
 }
 
 provider "azurerm" {
   features {}
+
+  subscription_id = var.subscription_id
 }

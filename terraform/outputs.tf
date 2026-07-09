@@ -1,17 +1,23 @@
 output "resource_group_name" {
-
   value = azurerm_resource_group.rg.name
-
 }
 
-output "vnet_name" {
-
-  value = azurerm_virtual_network.vnet.name
-
+output "log_analytics_workspace_name" {
+  value = azurerm_log_analytics_workspace.law.name
 }
 
-output "vnet_address_space" {
+output "windows_vm_name" {
+  value = azurerm_windows_virtual_machine.winvm.name
+}
 
-  value = azurerm_virtual_network.vnet.address_space
+output "linux_vm_name" {
+  value = azurerm_linux_virtual_machine.linuxvm.name
+}
 
+output "windows_public_ip" {
+  value = azurerm_public_ip.pip_windows.ip_address
+}
+
+output "linux_public_ip" {
+  value = azurerm_public_ip.pip_linux.ip_address
 }
